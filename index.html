@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page__container">
+			<div class="page__main main-block">
+				<h4 class="main-block__title">Тема "Форми"</h4>
+				<div class="main-block__form">
+					<form method="get" enctype="multipart/form-data" action="#">
+						<div class="form__line">
+                     <label class="form__label">Введіть своє ім'я</label>
+							<input class="form__input" required autocomplete="off" placeholder="Ім'я" name="name" tabindex="1" type="text">
+						</div>
+						<div class="form__line">
+                     <label 
+                     class="form__label">Введіть свій
+                     пароль</label>
+							<input class="form__input" required 
+                     autocomplete="off" placeholder="123456789" name="pass" 
+                     tabindex="1" type="password">
+                  </div>
+						<div class="form__line">
+							<label class="form__label">Введіть свою електронну пошту</label>
+                     <input class="form__input" required 
+                     autocomplete="off" placeholder="forma@gmail.com" name="mail" 
+                     tabindex="1" type="email">
+                  </div>
+						<div class="form__line">
+							<label class="form__label">Введіть свій номер телефону</label>
+                     <input class="form__input" 
+                     required 
+                     autocomplete="off" placeholder="+380(__)___ __ __" name="phone" 
+                     tabindex="1" type="tel">
+                  </div>
+						<div class="form__line">
+							<label class="form__label">Введіть свій вік</label>
+                     <input class="form__input" 
+                     required 
+                     autocomplete="off" placeholder="18" name="digi" 
+                     tabindex="1" type="number">
+                  </div>
+						<div class="form__line">
+							<label 
+                     class="form__label">Введіть свій 
+                     улюблений колір</label>
+                     <input class="form__input"
+                     autocomplete="off" name="color" 
+                     tabindex="1" type="color">
+						</div>
+						<div class="form__line">
+							<label 
+                     class="form__label">Введіть бажану серію у пошуковий запит</label>
+                     <input class="form__input"
+                     autocomplete="off" name="search" 
+                     tabindex="1" type="search">
+                  </div>
+						<div class="form__line">
+							<label 
+                     class="form__label">Оберіть бажану дату</label>
+                     <input class="form__input"
+                     autocomplete="off" name="date" 
+                     type="date">
+                  </div>
+						<div class="form__line">
+							<label 
+                     class="form__label">Оберіть гучність</label>
+                     <input class="form__input"
+                     autocomplete="off" name="range"
+                     type="range">
+                  </div>
+						<div class="form__line">
+							<input class="form__label" name="file" accept="image/png, image/jpeg" multiple type="file" >
+						</div>
+                  <div class="form__line">
+							<label class="form__label">Оберіть зі списку</label>
+						</div>
+						<div class="form__line">
+                     <select name="list">
+								<option value="">чорний</option>
+								<option value="">білий</option>
+								<option value="">фіолетовий</option>
+							</select>
+						</div>
+                  <div class="form__line">
+							<textarea autocomplete="off" 
+                     name="message" class="form__area">введіть додаткову інформацію</textarea>
+                  </div>
+						<div class="form__line">
+							<label 
+                     class="form__label">Оберіть мову форми</label>
+						</div>
+						<div class="form__radio">
+							<label class="form__label" 
+                     for="language-1">UK</label>
+							<input checked class="form__language" id="language-1" required value="uk" name="language" type="radio">
+						</div>
+						<div class="form__radio">
+							<label class="form__label" 
+                     for="language-2">EN</label>
+							<input checked 
+                     class="form__language" 
+                     id="language-2" required 
+                     value="en"
+                     name="language" type="radio">
+                  </div>
+						<div class="form__line">
+							<label 
+                     class="form__label">Оберіть своє хоббі</label>
+                  </div>
+						<div class="form__radio">
+							<label class="form__label" 
+                     for="hobby-1">музика</label>
+							<input checked 
+                     class="form__hobby" 
+                     id="hobby-1" required 
+                     value="muzic" 
+                     name="hobby" type="checkbox">
+                  </div>
+                  <div class="form__radio">
+							<label class="form__label" 
+                     for="hobby-2">спорт</label>
+							<input checked 
+                     class="form__hobby" 
+                     id="hobby-2" required 
+                     value="sport"
+                     name="hobby" type="checkbox">
+                  </div>
+						<div class="form__radio">
+							<label class="form__label" 
+                     for="hobby-3">фото</label>
+							<input checked 
+                     class="form__hobby" 
+                     id="hobby-3" required 
+                     value="photo"
+                     name="hobby" type="checkbox">
+                  </div>
+                  <div class="button">
+						   <div class="form__line">
+							   <button class="line__submit" type="submit">надіслати</button>
+						   </div>
+						   <div class="form__line">
+							   <button class="line__reset" 
+                        type="reset">очистити</button>
+                     </div>
+                  </div>
+					</form>
+				</div>
+			</div>
+			<div class="page__section section-block">
+				<div class="section-block__block">
+					<div class="section-block__image">
+						<img src="img/illustration.svg" alt="illustration">
+					</div>
+					<div class="section-block__content content-actions">
+						<h6 class="content-actions__subtitle">Leave a request now and get 20% off!</h6>
+						<h1 class="content-actions__title">Register for the course</h1>
+						<form action="#" method="get" 
+                  class="info">
+						   <div class="info__line">
+								<label class="info__label" for="name">Full Name</label>
+								<input class="info__input" id="name" required autocomplete="off" name="name" placeholder="Your full name" type="text">
+						   </div>
+							<div class="info__line">
+								<label class="info__label" for="email-1">Email</label>
+								<input class="info__input" id="email-1" 
+                        required autocomplete="off" 
+                        name="mail" placeholder="Your    working email" type="email">
+                     </div>
+							<div class="info__line">
+								<label class="info__label" 
+                        for="tel-1">Phone</label>
+								<input class="info__input" 
+                        id="tel-1" 
+                        required autocomplete="off" 
+                        name="phone" placeholder="Your    phone number" type="tel">
+                     </div>
+							<div class="info__line">
+								<div class="info-form__button button-join">
+									<button class="button-join" type="submit">Join the course</button>
+									<input type="hidden" value="button" name="iam-hidden">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+</html>
